@@ -1,0 +1,1 @@
+To find all pairs of elements whose sum is 25, we can use 🧐 nested loops to iterate over each element in the array and compare it with all the other elements to check if their sum is equal to 25.
