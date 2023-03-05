@@ -6,7 +6,7 @@ int linearSearch(int array[], int number, int size)
     int i = 0;
     while (i < size && array[i] != number)
         i++;
-    return i == size ? 0 : i;
+    return i == size ? -1 : i;
 }
 
 int main()
@@ -17,7 +17,7 @@ int main()
     cout << "Enter number to search: ";
     cin >> number;
     int loc = linearSearch(arr, number, size);
-    (loc == 0) ? cout << "The element " << number << " was not found" << endl :
+    (loc == -1) ? cout << "The element " << number << " was not found" << endl :
      cout << "The element " << number << " was found at index " << loc << endl;
     return 0;
 }

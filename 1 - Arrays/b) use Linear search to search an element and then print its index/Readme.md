@@ -2,7 +2,7 @@
 Linear Search Explained! 🕵️‍♂️🔍
 =================================
 
-🤖 I can help with that! Here's a step-by-step explanation of each line in this code with some emojis to make it more fun and intuitive:
+🤖 Here's a step-by-step explanation of each line of linear search:
 
 1.  `int linearSearch(int array[], int number, int size)`
     

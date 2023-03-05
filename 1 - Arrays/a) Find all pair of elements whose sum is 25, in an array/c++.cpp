@@ -11,11 +11,12 @@ int main()
     {
         for (int j = 1 + i; j < 10; j++)
         {
-            (array[i] == array[j]) ? cout << "array[" << i << "]"
-                                          << " + "
-                                          << "array[" << j << "]"
-                                          << " = " << 25
-                                   : cout << "";
+            (array[i] +  array[j] == 25)
+                ? cout << "array[" << i << "]"
+                       << " + "
+                       << "array[" << j << "]"
+                       << " = " << 25
+                : cout << "";
         }
     }
     return 0;
