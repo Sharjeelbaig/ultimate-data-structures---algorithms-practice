@@ -8,6 +8,7 @@ Binary Search 🔍
 
 ### | Step 1:
 
+The function creation
 
 ```C++
 int binarySearch(int arr[], int left, int right, int number)
@@ -22,6 +23,7 @@ This is the start of a function called `binarySearch` that takes in 4 parameters
 ---
 
 ### | Step 2:
+while loop with its range
 ```C++
 while (left <= right)
 ```
@@ -31,6 +33,7 @@ This initiates a while loop that will continue running as long as `left` is less
 ---
 
 ### | Step 3:
+the middle index!
 ```C++
 int mid = left + (right - left) / 2;
 ```
@@ -40,7 +43,7 @@ This calculates the midpoint between `left` and `right` by taking the sum of `le
 ---
 
 ### | Step 4:
-
+if we get what we are looking for!
 ```C++
 if (arr[mid] == number) return mid;
 ```
@@ -50,6 +53,7 @@ This checks if the value at the midpoint index of `arr` matches the value we are
 ---
 
 ### | Step 5:
+but if we dont get what we are looking for, we can check either the right side or the left side of the mid point!
 ```C++
 arr[mid] < number ? left = mid + 1 : right = mid - 1;
 ```
@@ -59,6 +63,7 @@ If the value at the midpoint index isn't what we're looking for, we check to see
 ---
 
 ### | Step 6:
+What if we failed to find the number?
 ```C++
 return -1;
 ```
